@@ -9,4 +9,4 @@ This simple website shows the landing page of a pizza business.
 HTML | CSS | JavaScript
 ### License
 *MIT*
-Copyright (c) 2022
+Copyright (c) 2022 
