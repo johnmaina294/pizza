@@ -54,11 +54,7 @@ li a:hover {
     height: 1rem;
     width: 1rem;
 }
-.carousel-multi-item .carousel-indicators .active{
-    background-color: purple;
-    height: 1.25rem;
-    width: 1.25rem;
-}
+
 #ordersection{
     text-align: center;
 }
