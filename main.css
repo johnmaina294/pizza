@@ -49,11 +49,7 @@ li a:hover {
     font-size: 19px;
     font-family: 'Lato', sans-serif;
 }
-#menu{
-    padding-right: 12%;
-    padding-left: 12%;
-    text-align: center;
-}
+
 .carousel-inner{
     padding-bottom: 1%;
 }
