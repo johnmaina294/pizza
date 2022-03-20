@@ -1,0 +1,160 @@
+.container-fluid{
+    padding: 0;
+}
+#header{
+    background-image: url("https://images.pexels.com/photos/4394612/pexels-photo-4394612.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+#header p{
+    font-family: 'Palette Mosaic', bold;
+    margin: 0;
+    font-size: 30px;
+    color: purple;
+}
+.nav-items {
+    float: right;
+    margin: 0;
+    font-size: 18px;
+}
+#header .navbar{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+li {
+    display: inline;
+    margin-right: 20px;
+}
+li a{
+    color: white;
+}
+li a:hover {
+    color: purple;
+}
+.content{
+    text-align: center;
+    padding: 18%;
+}
+#header h1{
+    font-size: 120px;
+    letter-spacing: 1px;
+    font-family: 'Zhi Mang Xing', cursive;
+}
+#header h4{
+    font-size: 19px;
+    font-family: 'Lato', sans-serif;
+}
+#aboutus{
+    padding-right: 20%;
+    padding-left: 20%;
+    text-align: center;
+}
+#menu{
+    padding-right: 12%;
+    padding-left: 12%;
+    text-align: center;
+}
+.carousel-inner{
+    padding-bottom: 1%;
+}
+.carousel-multi-item .carousel-indicators li{
+    background-color: purple;
+    height: 1rem;
+    width: 1rem;
+}
+.carousel-multi-item .carousel-indicators .active{
+    background-color: purple;
+    height: 1.25rem;
+    width: 1.25rem;
+}
+#ordersection{
+    text-align: center;
+}
+.jumbotron{
+    border-radius: 20px;
+}
+form{
+    padding-left: 13%;
+    padding-right: 13%;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+.form-control{
+    color: rgb(17, 17, 17);
+}
+form label{
+    color: black;
+    font-size: 17px;
+}
+select{
+    display: block !important;
+}
+.form-check{
+    padding: 0;
+}
+h5 {
+    color: purple; 
+}
+.col-md-5{
+    text-align: left;
+    padding: 0;
+}
+.form-group small{
+    margin-top: 0 !important;
+    margin-bottom: 8px;
+}
+.btn {
+    color: #fff;
+    background-color: purple !important;
+    border-radius: 9px;
+    padding: 9px;
+}
+#yourorder{
+    text-align: center;
+    display: none;
+    padding-bottom: 5%;
+}
+table .table-sm th{
+    text-align: center;
+}
+#text{
+    padding-top: 7%;
+    padding-bottom: 5%;
+    padding-left: 0;
+    padding-right: 0;
+}
+#deliveryOptions{
+    display: none;
+}
+#delivery{
+    display: none;
+    text-align: center;
+    padding: 3% 
+}
+#pickUpConfirmation, #deliveryConfirmation{
+    display: none;
+    text-align: center;
+}
+div.totalPick, div.name, div.location, div.totalDel, div.phone{
+    display: inline;
+    font-weight: bold;
+}
+#contactus{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    background-color: purple;
+    background-size: cover;
+}
+h3{
+    padding-top: 3%;
+    font-size: 50px;
+    padding-bottom: 2%;
+}
+
