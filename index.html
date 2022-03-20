@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="images/icon.png"></link>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Palette+Mosaic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>The Pizza Place</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div id="header">
+            <div class="content">
+                <h1>The Pizza Place</h1>
+            </div>
+        </div>
+        <div id="ordersection">
+            <h3><b>Order </b></h3>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div class="jumbotron">
+                        <form id="orders">
+                            <div class="form-group">
+                                <label for="name">Your Name:</label>
+                                <input type="text" class="form-control" id="name" placeholder="John Doe" pattern="[a-zA-Z ]+" required>
+                            </div>
+                            <h5>Kindly pick the following:</h5>
+                            <div class="form-group">
+                                <label for="pizza-flavor">Pizza flavor</label>
+                                <select class="form-control" id="pizza-flavor" required>
+                                    <option>Hawaiian</option>
+                                    <option>Bbq Beef</option>
+                                    <option>Bbq Chicken</option>
+                                    <option>Bbq Pork</option>
+                                    <option>Chicken Tikka</option>
+                                    <option>Gamberi</option>
+                                    <option>Grilled Pork</option>
+                                    <option>Margharita</option>
+                                    <option>Marinara</option>
+                                    <option>Mushroom</option>
+                                    <option>Original Veggie</option>
+                                    <option>Oyster</option>
+                                    <option>Pepperoni</option>
+                                    <option>Pulled Pork</option>
+                                    <option>Spicy Veggie</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="pizza-size">Pizza size</label>
+                                <select class="form-control" id="pizza-size" required>
+                                    <option>Small</option>
+                                    <option>Medium</option>
+                                    <option>Large</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="pizza-crust">Pizza Crust</label>
+                                <select class="form-control" id="pizza-crust" required>
+                                    <option>Original</option>
+                                    <option>Gluten Free</option>
+                                    <option>Hand Tossed</option>
+                                    <option>Pan</option>
+                                    <option>Stuffed</option>
+                                    <option>Thin</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="pizza-toppings">Extra Toppings</label>
+                                <small id="pizza-toppings-help" class="form-text text-muted">Maximum of 3</small>
+                                <small class="form-text text-muted"><b>S:</b>Ksh.90 <b>M:</b>Ksh.120 <b>L:</b>Ksh.150</small>
+                                <div class="row">
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-5">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="toppings" value="Ham" id="ham">
+                                            <label class="form-check-label" for="ham">Ham</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="toppings" value="Bacon" id="bacon">
+                                            <label class="form-check-label" for="bacon">Bacon</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="toppings" value="Cheddar cheese" id="cheddar-cheese">
+                                            <label class="form-check-label" for="cheddar-cheese">Cheddar Cheese</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="toppings" value="Mozarella cheese" id="mozarella-cheese">
+                                            <label class="form-check-label" for="mozarella-cheese">Mozarella Cheese</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="toppings" value="Mushrooms" id="mushrooms">
+                                            <label class="form-check-label" for="mushrooms">Mushroom</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="toppings" value="Olives" id="olives">
+                                            <label class="form-check-label" for="olives">Olives</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="toppings" value="Onions" id="onions">
+                                            <label class="form-check-label" for="onions">Onions</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="toppings" value="Parmesan cheese" id="parmesan-cheese">
+                                            <label class="form-check-label" for="parmesan-cheese">Parmesan Cheese</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="toppings" value="Pepperoni" id="pepperoni">
+                                            <label class="form-check-label" for="pepperoni">Pepperoni</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="toppings" value="Sausage" id="sausage">
+                                            <label class="form-check-label" for="sausage">Sausage</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-1"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="pizza-number">Number of Pizzas</label>
+                                <input type="number" class="form-control" id="pizza-number" required>
+                            </input>
+                            </div>
+                            <button type="submit" name="submitButton" class="btn submit" id="placeorder">Place Order</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+        <div id="yourorder">
+            <br>
+            <hr width="30%" color="#FE5A07" border-color="#FE5A07">
+            <h3 class="salutation"><b>Here's your order:</b></h3>
+            <div id="orderDetails">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <table class="table table-sm" id="orderTable">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Flavor</th>
+                                    <th scope="col">Number</th>
+                                    <th scope="col">Size</th>
+                                    <th scope="col">Crust</th>
+                                    <th scope="col">Extra Toppings</th>
+                                    <th scope="col">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody id="ordersmade">
+                                <tr>
+                                    <td class="pizza-flavor"></td>
+                                    <td class="number"></td>
+                                    <td class="pizza-size"></td>
+                                    <td class="pizza-crust"></td>
+                                    <td class="toppings"></td>
+                                    <td class="pizzaTotal1"td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="grandtot"td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                        <a href="#ordersection" type="submit" name="addorder" onclick="addOrder()" class="btn  submit" id="addorder">Add Order</a>
+                        <button type="submit" name="checkout" onclick="deliveryOptions()" class="btn submit" id="checkout">Checkout</button>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+            <div id="deliveryOptions">
+                <i class="fa fa-clock-o" style="font-size:100px;color:purple"></i>
+                <br>
+                <br>
+                <p>Your order will be ready in 10 minutes.</p>
+                <p>Would you like to:</p>
+                <button type="submit" name="pickup" onclick="pickUp()" class="btn"><i class="fas fa-store"></i> Pick it Up</button>
+                <button type="submit" name="deliver" onclick="deliver()" class="btn submit"><i class="fas fa-truck"></i> Get it Delivered</button>
+            </div>
+        </div>
+        <div id="delivery">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <div class="jumbotron">
+                        <form id="deliveryDetails">
+                            <h5>Please fill the following for delivery:</h5>
+                            <div class="form-group">
+                                <div class="form-group">
+                                    <label for="location">Delivery location:</label>
+                                    <input type="text" class="form-control" id="location" placeholder="Street, County" pattern="[a-zA-Z0-9]+" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number:</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+254123456789"  required>
+                                <br>
+                                <br>
+                                <br>
+                            </div>
+                            <button type="submit" class="btn submit" id="delivery-details">Deliver</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+        <div id="pickUpConfirmation">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <div class="jumbotron">
+                        <i class="fas fa-check-circle" style="font-size:80px;color:green;"></i>
+                        <br>
+                        <br>
+                        <p><div class="name"></div>, your order has been successfully placed!<br><br>Total amount payable at the store on pickup is Ksh.<div class="totalPick"></div>.</p>
+                        <a href="#header" type="button" class="btn" onclick="reloadPage()" id="got-it" style="background-color:green">OK, Got it!</a>
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+        <div id="deliveryConfirmation">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <div class="jumbotron">
+                        <i class="fas fa-check-circle" style="font-size:80px;color:green;"></i>
+                        <br>
+                        <br>
+                        <p>
+                            <div class="name"></div>, your order has been successfully placed!
+                            <br>
+                            <br>The delivery fee to
+                            <div class="location"></div> is Ksh.200.
+                            <br>
+                            <br>Total amount payable to the courier on delivery is Ksh.
+                            <div class="totalDel"></div>.
+                            <br>
+                            <br>In case there are any changes to your order, we shall reach you on:
+                            <div class="phone"></div>.</p>
+                        <a href="#header" type="button" class="btn" onclick="reloadPage()" id="got-it" style="background-color:green">OK, Got it!</a>
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+        <div id="contactus">
+            <div class="socials">
+                <span><i class="fab fa-youtube icon_youtube" style="font-size:30px"></i></span>
+                <span><i class="fab fa-facebook icon_facebook" style="font-size:30px" ></i></span>
+                <span><i class="fab fa-twitter" style="font-size:30px"></i></span>
+                <span><i class="fab fa-instagram icon_instagram" style="font-size:30px"></i></span>
+                <span><i class="fab fa-tiktok icon_tiktok" style="font-size:30px"></i></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
