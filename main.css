@@ -49,10 +49,6 @@ li a:hover {
     font-size: 19px;
     font-family: 'Lato', sans-serif;
 }
-
-.carousel-inner{
-    padding-bottom: 1%;
-}
 .carousel-multi-item .carousel-indicators li{
     background-color: purple;
     height: 1rem;
