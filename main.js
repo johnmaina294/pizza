@@ -4,6 +4,7 @@ function capitalize_inputs(str) {
   });
 }
 
+
 function placeOrder() { 
   var name = capitalize_inputs($("input#name").val());
   var flavor = $("#pizza-flavor").val();
